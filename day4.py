@@ -97,7 +97,6 @@ def solution(lines, validate_values=False):
     for line in lines:
         passport_input = passport_input + line
         if line == '\n':
-            passport_input.replace('\n', ' ')
             valid = valid + validate_passport(passport_input, validate_values)
             passport_input = ''
 
